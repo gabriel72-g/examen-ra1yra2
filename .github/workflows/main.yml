@@ -1,4 +1,4 @@
-rname: subir y crear
+name: subir y crear
 on:
   push:
     branches:
