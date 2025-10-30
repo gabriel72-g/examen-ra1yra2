@@ -29,6 +29,6 @@ jobs:
       - name: Terraform plan
         run: terraform plan -out=tfplan-main
       - name: Terraform apply
-        run: terraform init -auto-approve
+        run: terraform apply -auto-approve
       - name: guardar tfstate en el S3
         run: aws s3 cp terraform.tfstate s3://mi-bucket-gabriel-2/terraform-tfstate
