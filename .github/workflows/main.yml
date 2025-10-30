@@ -1,4 +1,4 @@
-name: subir y crear
+rname: subir y crear
 on:
   push:
     branches:
@@ -20,7 +20,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
             aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_ID}}
-            aws-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+            aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
             aws-region: "us-east-1"
 
